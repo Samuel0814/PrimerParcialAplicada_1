@@ -104,6 +104,7 @@
   <ItemGroup>
     <Folder Include="BLL\" />
     <Folder Include="Entidades\" />
+    <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripts\Parcial1Db.sql" />

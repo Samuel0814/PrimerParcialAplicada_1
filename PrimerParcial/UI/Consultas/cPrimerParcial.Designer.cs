@@ -50,7 +50,7 @@
             this.label1.Location = new System.Drawing.Point(69, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 10;
             this.label1.Text = "Filtro";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -60,7 +60,7 @@
             this.FiltrocomboBox.Location = new System.Drawing.Point(104, 37);
             this.FiltrocomboBox.Name = "FiltrocomboBox";
             this.FiltrocomboBox.Size = new System.Drawing.Size(152, 21);
-            this.FiltrocomboBox.TabIndex = 1;
+            this.FiltrocomboBox.TabIndex = 0;
             // 
             // label2
             // 
@@ -69,7 +69,7 @@
             this.label2.Location = new System.Drawing.Point(290, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 11;
             this.label2.Text = "Criterio";
             // 
             // CriteriocomboBox
@@ -78,7 +78,7 @@
             this.CriteriocomboBox.Location = new System.Drawing.Point(335, 40);
             this.CriteriocomboBox.Name = "CriteriocomboBox";
             this.CriteriocomboBox.Size = new System.Drawing.Size(320, 21);
-            this.CriteriocomboBox.TabIndex = 3;
+            this.CriteriocomboBox.TabIndex = 1;
             // 
             // Buscarbutton
             // 
@@ -87,7 +87,7 @@
             this.Buscarbutton.Location = new System.Drawing.Point(672, 40);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(90, 45);
-            this.Buscarbutton.TabIndex = 4;
+            this.Buscarbutton.TabIndex = 2;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Buscarbutton.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@
             this.Imprimirbutton.Location = new System.Drawing.Point(12, 391);
             this.Imprimirbutton.Name = "Imprimirbutton";
             this.Imprimirbutton.Size = new System.Drawing.Size(86, 47);
-            this.Imprimirbutton.TabIndex = 6;
+            this.Imprimirbutton.TabIndex = 5;
             this.Imprimirbutton.Text = "Imprimir";
             this.Imprimirbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Imprimirbutton.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@
             this.ConsultadataGridView.Location = new System.Drawing.Point(72, 123);
             this.ConsultadataGridView.Name = "ConsultadataGridView";
             this.ConsultadataGridView.Size = new System.Drawing.Size(690, 262);
-            this.ConsultadataGridView.TabIndex = 5;
+            this.ConsultadataGridView.TabIndex = 6;
             this.ConsultadataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ConsultadataGridView_CellContentClick);
             // 
             // label3
@@ -120,7 +120,7 @@
             this.label3.Location = new System.Drawing.Point(69, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 13);
-            this.label3.TabIndex = 9;
+            this.label3.TabIndex = 7;
             this.label3.Text = "Filtrar usando rango de fecha ";
             // 
             // dateTimePicker1
@@ -128,14 +128,14 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(293, 90);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dateTimePicker1.TabIndex = 3;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(562, 91);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 11;
+            this.dateTimePicker2.TabIndex = 4;
             // 
             // label4
             // 
@@ -144,7 +144,7 @@
             this.label4.Location = new System.Drawing.Point(507, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 12;
+            this.label4.TabIndex = 9;
             this.label4.Text = "Hasta";
             // 
             // label5
@@ -154,7 +154,7 @@
             this.label5.Location = new System.Drawing.Point(239, 96);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 13;
+            this.label5.TabIndex = 8;
             this.label5.Text = "Desde";
             // 
             // cPrimerParcial
@@ -177,7 +177,7 @@
             this.Controls.Add(this.FiltrocomboBox);
             this.Controls.Add(this.label1);
             this.Name = "cPrimerParcial";
-            this.Text = "Consulta de Personas";
+            this.Text = "Consulta";
             ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

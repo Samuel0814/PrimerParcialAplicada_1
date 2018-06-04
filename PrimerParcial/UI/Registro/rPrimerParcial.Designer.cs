@@ -51,7 +51,7 @@
             this.Buscarbutton.Location = new System.Drawing.Point(648, 45);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(85, 45);
-            this.Buscarbutton.TabIndex = 0;
+            this.Buscarbutton.TabIndex = 1;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Buscarbutton.UseVisualStyleBackColor = true;
@@ -63,7 +63,7 @@
             this.Nuevobutton.Location = new System.Drawing.Point(85, 348);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(85, 45);
-            this.Nuevobutton.TabIndex = 1;
+            this.Nuevobutton.TabIndex = 2;
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Nuevobutton.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@
             this.Guardarbutton.Location = new System.Drawing.Point(370, 348);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(85, 45);
-            this.Guardarbutton.TabIndex = 2;
+            this.Guardarbutton.TabIndex = 3;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Guardarbutton.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             this.Eliminarbutton.Location = new System.Drawing.Point(648, 348);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(85, 45);
-            this.Eliminarbutton.TabIndex = 3;
+            this.Eliminarbutton.TabIndex = 4;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Eliminarbutton.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             this.label1.Location = new System.Drawing.Point(82, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 5;
             this.label1.Text = "ID";
             // 
             // numericUpDown1
@@ -106,7 +106,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(137, 45);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(117, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown1.TabIndex = 0;
             // 
             // rPrimerParcial
             // 
@@ -121,7 +121,7 @@
             this.Controls.Add(this.Nuevobutton);
             this.Controls.Add(this.Buscarbutton);
             this.Name = "rPrimerParcial";
-            this.Text = "Registro de personas";
+            this.Text = "Registro ";
             this.Load += new System.EventHandler(this.rPrimerParcial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
