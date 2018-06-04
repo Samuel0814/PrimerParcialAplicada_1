@@ -107,7 +107,6 @@
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAL\Scripts\Parcial1Db.sql" />
     <None Include="Resources\SARD-400x2001.png" />
     <None Include="Resources\icons8_Delete_File_321.png" />
     <None Include="Resources\icons8_Save_All_321.png" />
@@ -116,6 +115,9 @@
     <None Include="Resources\icons8_Print_32.png" />
     <None Include="Resources\icons8_Search_Property_321.png" />
     <None Include="Resources\consulta-600x3001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\Scripts\Parcial1Db.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
