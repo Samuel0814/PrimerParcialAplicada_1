@@ -70,6 +70,9 @@
     <Compile Include="UI\Registro\rPrimerParcial.Designer.cs">
       <DependentUpon>rPrimerParcial.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -104,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripts\Parcial1Db.sql" />
+    <None Include="Resources\SARD-400x2001.png" />
     <None Include="Resources\icons8_Delete_File_321.png" />
     <None Include="Resources\icons8_Save_All_321.png" />
     <None Include="Resources\icons8_Create_321.png" />
