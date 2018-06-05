@@ -36,8 +36,8 @@
             this.Imprimirbutton = new System.Windows.Forms.Button();
             this.ConsultadataGridView = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.DesdedateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.HastadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).BeginInit();
@@ -52,7 +52,6 @@
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 10;
             this.label1.Text = "Filtro";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // FiltrocomboBox
             // 
@@ -61,6 +60,7 @@
             this.FiltrocomboBox.Name = "FiltrocomboBox";
             this.FiltrocomboBox.Size = new System.Drawing.Size(152, 21);
             this.FiltrocomboBox.TabIndex = 0;
+            this.FiltrocomboBox.SelectedIndexChanged += new System.EventHandler(this.FiltrocomboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -79,6 +79,7 @@
             this.CriteriocomboBox.Name = "CriteriocomboBox";
             this.CriteriocomboBox.Size = new System.Drawing.Size(320, 21);
             this.CriteriocomboBox.TabIndex = 1;
+            this.CriteriocomboBox.SelectedIndexChanged += new System.EventHandler(this.CriteriocomboBox_SelectedIndexChanged);
             // 
             // Buscarbutton
             // 
@@ -91,6 +92,7 @@
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // Imprimirbutton
             // 
@@ -104,6 +106,7 @@
             this.Imprimirbutton.Text = "Imprimir";
             this.Imprimirbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Imprimirbutton.UseVisualStyleBackColor = true;
+            this.Imprimirbutton.Click += new System.EventHandler(this.Imprimirbutton_Click);
             // 
             // ConsultadataGridView
             // 
@@ -117,25 +120,27 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(69, 96);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(69, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Filtrar usando rango de fecha ";
             // 
-            // dateTimePicker1
+            // DesdedateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(293, 90);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.DesdedateTimePicker.CalendarForeColor = System.Drawing.Color.Transparent;
+            this.DesdedateTimePicker.Location = new System.Drawing.Point(293, 90);
+            this.DesdedateTimePicker.Name = "DesdedateTimePicker";
+            this.DesdedateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.DesdedateTimePicker.TabIndex = 3;
             // 
-            // dateTimePicker2
+            // HastadateTimePicker
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(562, 91);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 4;
+            this.HastadateTimePicker.Location = new System.Drawing.Point(562, 91);
+            this.HastadateTimePicker.Name = "HastadateTimePicker";
+            this.HastadateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.HastadateTimePicker.TabIndex = 4;
             // 
             // label4
             // 
@@ -166,8 +171,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.HastadateTimePicker);
+            this.Controls.Add(this.DesdedateTimePicker);
             this.Controls.Add(this.ConsultadataGridView);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Imprimirbutton);
@@ -178,6 +183,7 @@
             this.Controls.Add(this.label1);
             this.Name = "cPrimerParcial";
             this.Text = "Consulta";
+            this.Load += new System.EventHandler(this.cPrimerParcial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,8 +200,8 @@
         private System.Windows.Forms.Button Imprimirbutton;
         private System.Windows.Forms.DataGridView ConsultadataGridView;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker DesdedateTimePicker;
+        private System.Windows.Forms.DateTimePicker HastadateTimePicker;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
     }
