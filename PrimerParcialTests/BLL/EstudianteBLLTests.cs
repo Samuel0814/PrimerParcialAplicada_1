@@ -28,7 +28,15 @@ namespace PrimerParcial.BLL.Tests
         [TestMethod()]
         public void ModificarTest()
         {
-            Assert.Fail();
+            bool paso;
+            Estudiantes Estudiante = new Estudiantes();
+            Estudiante.GrupoId = 10;
+            Estudiante.Descripcion = "Que tal";
+            Estudiante.Fecha = DateTime.Now;
+            Estudiante.Cantidad = 20;
+            Estudiante.Grupos = 5;
+            paso = BLL.EstudianteBLL.Modificar(Estudiante);
+            Assert.AreEqual(paso, true);
         }
 
         [TestMethod()]
