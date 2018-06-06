@@ -50,13 +50,16 @@ namespace PrimerParcial.BLL.Tests
         [TestMethod()]
         public void BuscarTest()
         {
+            Estudiantes Estudiante = new Estudiantes();
+            Estudiante = EstudianteBLL.Buscar(5);
             Assert.Fail();
         }
 
         [TestMethod()]
         public void GetListTest()
         {
-            Assert.Fail();
+            var lista = EstudianteBLL.GetList(x => true);
+            Assert.IsNotNull(lista);
         }
     }
 }
