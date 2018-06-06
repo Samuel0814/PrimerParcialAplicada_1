@@ -42,7 +42,9 @@ namespace PrimerParcial.BLL.Tests
         [TestMethod()]
         public void EliminarTest()
         {
-            Assert.Fail();
+            bool paso = false;
+            paso = EstudianteBLL.Eliminar(5);
+            Assert.AreEqual(paso, true);
         }
 
         [TestMethod()]
