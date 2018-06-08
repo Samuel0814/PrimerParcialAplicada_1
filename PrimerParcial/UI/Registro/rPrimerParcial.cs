@@ -106,8 +106,8 @@ namespace PrimerParcial.UI.Registro
         private Estudiantes LlenaClase()
         {
             Estudiantes Estudiante = new Estudiantes();
-
-            Estudiante.GrupoId = Convert.ToInt32(GrupoIdnumericUpDown.Value);
+            //Al tenerlo como clave primaria no necesito introducirlo a menos que sea para buscar, porque por defecto se pone.
+            //Estudiante.GrupoId = Convert.ToInt32(GrupoIdnumericUpDown.Value);
             Estudiante.Fecha = FechadateTimePicker.Value;
             Estudiante.Descripcion = DescripcionrichTextBox.Text;
             Estudiante.Cantidad = Convert.ToInt32(CantidadnumericUpDown.Value);
@@ -140,6 +140,22 @@ namespace PrimerParcial.UI.Registro
             else
                 MessageBox.Show("No Se Pudo Eliminar!!", "Algo Salio Mal!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+        }
+
+        private void CantidadnumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            if (GruposnumericUpDown.Value != 0)
+            {
+                IntegrantesnumericUpDown.Value =  CantidadnumericUpDown.Value / GruposnumericUpDown.Value;
+            }
+        }
+
+        private void GruposnumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            if (CantidadnumericUpDown.Value != 0)
+            {
+                IntegrantesnumericUpDown.Value =  CantidadnumericUpDown.Value / GruposnumericUpDown.Value;
+            }
         }
     }
 }

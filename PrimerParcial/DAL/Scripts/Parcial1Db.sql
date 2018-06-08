@@ -10,3 +10,4 @@ CREATE TABLE Grupos(
 	Grupos int,
 	Integrantes int
 );
+
