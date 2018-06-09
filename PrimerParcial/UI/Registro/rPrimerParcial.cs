@@ -75,17 +75,17 @@ namespace PrimerParcial.UI.Registro
                 ValidarerrorProvider.SetError(DescripcionrichTextBox, "No debes dejar este campo vacio");
                 paso = false;
             }
-            else if (CantidadnumericUpDown.Value == 0)
+
+            if (CantidadnumericUpDown.Value == 0)
             {
                 ValidarerrorProvider.SetError(CantidadnumericUpDown, "No debe dejarlo el campo en 0");
                 paso = false;
             }
-            else if(GruposnumericUpDown.Value == 0)
+            if (GruposnumericUpDown.Value == 0)
             {
-                ValidarerrorProvider.SetError(CantidadnumericUpDown, "No debe dejar el campo en 0");
+                ValidarerrorProvider.SetError(GruposnumericUpDown, "No debe dejar el campo en 0");
                 paso = false;
             }
-
             return paso;
         }
         private Estudiantes LlenaClase()
