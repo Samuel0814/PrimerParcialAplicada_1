@@ -70,34 +70,19 @@ namespace PrimerParcial.UI.Registro
         {
             bool paso = true;
 
-            if (DescripcionrichTextBox.Text == string.Empty)
+            if (String.IsNullOrEmpty(DescripcionrichTextBox.Text))
             {
-                ValidarerrorProvider.SetError(DescripcionrichTextBox, "Falto Introducir La Descripcion Del Articulo");
+                ValidarerrorProvider.SetError(DescripcionrichTextBox, "No debes dejar este campo vacio");
                 paso = false;
             }
-            else
-
-            if (CantidadnumericUpDown.Value == 0)
+            else if (CantidadnumericUpDown.Value == 0)
             {
-                ValidarerrorProvider.SetError(CantidadnumericUpDown, "Falto Digital El Precio Del Articulo");
+                ValidarerrorProvider.SetError(CantidadnumericUpDown, "No debe dejarlo el campo en 0");
                 paso = false;
             }
-            else
-            if (GruposnumericUpDown.Value == 0)
+            else if(GruposnumericUpDown.Value == 0)
             {
-                ValidarerrorProvider.SetError(GruposnumericUpDown, "Al Menos Debe Exitir 1 Articulo");
-                paso = false;
-            }
-            else
-            if (IntegrantesnumericUpDown.Value == 0)
-            {
-                ValidarerrorProvider.SetError(IntegrantesnumericUpDown, "Debe Ingresar La Cantidad Cotizada Del Articulo");
-                paso = false;
-            }
-            else
-                if (IntegrantesnumericUpDown.Value > IntegrantesnumericUpDown.Value)
-            {
-                ValidarerrorProvider.SetError(IntegrantesnumericUpDown, "La Cantidad Cotizada No Debe Superar La Existencia Del Articulo");
+                ValidarerrorProvider.SetError(CantidadnumericUpDown, "No debe dejar el campo en 0");
                 paso = false;
             }
 

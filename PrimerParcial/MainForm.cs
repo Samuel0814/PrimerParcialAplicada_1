@@ -41,8 +41,12 @@ namespace PrimerParcial
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hasta Luego, Esperamos Verlo Pronto Por Aqui!!", "Despedida!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Close();
+             MessageBox.Show("Hasta Luego, Esperamos Verlo Pronto Por Aqui!!", "Despedida!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+             this.Close();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }

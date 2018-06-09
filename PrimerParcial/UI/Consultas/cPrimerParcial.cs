@@ -20,7 +20,6 @@ namespace PrimerParcial.UI.Consultas
 
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
-            //inicializar filtro en True
             Expression<Func<Estudiantes, bool>> filtro = a => true;
             int GrupoId;
 
@@ -28,7 +27,7 @@ namespace PrimerParcial.UI.Consultas
             {
                 case 0://Todos
                     break;
-                case 1://ArticuloId                    
+                case 1://Integrantes                   
                     GrupoId = Convert.ToInt32(CriteriocomboBox.Text);
                     filtro = a => a.Integrantes == GrupoId;
                     break;
