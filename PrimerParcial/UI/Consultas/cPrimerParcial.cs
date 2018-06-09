@@ -109,5 +109,16 @@ namespace PrimerParcial.UI.Consultas
         {
 
         }
+
+        private void cPrimerParcial_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro que desea salir de la consulta?",
+                       "Consulta",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
+            {
+                e.Cancel = true; //Cancela el cerrando de la consulta
+            }
+        }
     }
  }

@@ -234,6 +234,7 @@
             this.Controls.Add(this.Buscarbutton);
             this.Name = "rPrimerParcial";
             this.Text = "Registro ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.rPrimerParcial_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ValidarerrorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrupoIdnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).EndInit();

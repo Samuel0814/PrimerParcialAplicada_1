@@ -142,5 +142,16 @@ namespace PrimerParcial.UI.Registro
                 IntegrantesnumericUpDown.Value =  CantidadnumericUpDown.Value / GruposnumericUpDown.Value;
             }
         }
+
+        private void rPrimerParcial_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro que desea salir del registro?",
+                       "Consulta",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
+            {
+                e.Cancel = true; //Cancela el cerrado del registro
+            }
+        }
     }
 }

@@ -190,6 +190,7 @@
             this.Controls.Add(this.label1);
             this.Name = "cPrimerParcial";
             this.Text = "Consulta";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.cPrimerParcial_FormClosing);
             this.Load += new System.EventHandler(this.cPrimerParcial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).EndInit();
             this.ResumeLayout(false);

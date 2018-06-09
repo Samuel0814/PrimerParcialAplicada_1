@@ -41,12 +41,23 @@ namespace PrimerParcial
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-             MessageBox.Show("Hasta Luego, Esperamos Verlo Pronto Por Aqui!!", "Despedida!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-             this.Close();
+            this.Close();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+    
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro que desea salir de la aplicacion?",
+                       "Consulta",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
+            {
+                e.Cancel = true; //Cancela el cerrado del formulario
+            }
         }
     }
 }
